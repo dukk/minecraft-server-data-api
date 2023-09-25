@@ -1,1 +1,1 @@
-# minecraft-server-data-api
+# minecraft-server-rcon-api

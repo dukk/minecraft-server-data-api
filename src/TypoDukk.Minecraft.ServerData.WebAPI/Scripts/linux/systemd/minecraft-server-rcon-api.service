@@ -1,0 +1,17 @@
+﻿[Unit]
+Description=Minecraft Server API API
+
+[Service]
+WorkingDirectory=/opt/minecraft-server-rcon-api
+ExecStart=/usr/bin/dotnet /opt/minecraft-server-rcon-api/TypoDukk.Minecraft.ServerRcon.WebAPI.dll --urls="http://0.0.0.0:25551"
+SyslogIdentifier=minecraft-server-rcon-api
+User=minecraft
+Restart=always
+RestartSec=5
+KillSignal=SIGINT
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+# Environment=DOTNET_ROOT=/usr/lib64/dotnet
+
+[Install]
+WantedBy=multi-user.target

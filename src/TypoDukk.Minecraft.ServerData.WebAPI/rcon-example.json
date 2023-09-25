@@ -1,0 +1,30 @@
+{
+  "Rcon": {
+    "Servers": [
+      {
+        "Name": "Proxy",
+        "Host": "10.0.0.50",
+        "Port": "1337",
+        "Password": "ProxyPassword!"
+      },
+      {
+        "Name": "Lobby",
+        "Host": "10.0.0.50",
+        "Port": "25570",
+        "Password": "LobbyPassword!"
+      },
+      {
+        "Name": "Survival",
+        "Host": "10.0.0.51",
+        "Port": "25571",
+        "Password": "SurvivalPassword!"
+      },
+      {
+        "Name": "Creative",
+        "Host": "10.0.0.52",
+        "Port": "25572",
+        "Password": "CreativePassword!"
+      }
+    ]
+  }
+}
